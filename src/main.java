@@ -1,29 +1,42 @@
 import java.util.Scanner;
 
-public static void main(String[] args) {
+public class main {
 
-        Scanner sc = new Scanner(System.in);
+        public static void main(String[] args) {
 
-        System.out.println("========PORTFOLIO OF ACTIVITY======");
-        System.out.println(" Name: Mark Roy A. Nable ");
-        System.out.println(" Year & Section: IT2C ");
-        System.out.println("==================-================");
-        System.out.println("=        CONTENT OF ACTIVITY      =");
-        System.out.println("===================================");
-        System.out.println("1. ACTIVITY 1                     =");
-        System.out.println("2. ACTIVITY 2                     =");
-        System.out.println("===================================");
+                Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter Selected Activity: ");
-        int choice = sc.nextInt();
+                System.out.println("===================================");
+                System.out.println("=       PORTFOLIO OF ACTIVITY     =");
+                System.out.println("===================================");
+                System.out.println("| Name: Mark Roy A. Nable         |");
+                System.out.println("| Year & Section: IT2C            |");
+                System.out.println("==================-================");
+                System.out.println("|        CONTENT OF ACTIVITY      |");
+                System.out.println("===================================");
+                System.out.println("| 1. ACTIVITY 1                   |");
+                System.out.println("| 2. ACTIVITY 2                   |");
+                System.out.println("===================================");
 
-        System.out.println("===================================");
+                System.out.print("Enter Selected Activity: ");
+                int choice = sc.nextInt();
 
-        if(choice == 1) {
+                System.out.println("===================================");
 
-            ACT_1 act1 = new ACT_1();
-            act1.userGreeting();
-        }else{
-            System.out.println("Selection not Found!");
+                if (choice == 1) {
+
+                        ACT_1 act1 = new ACT_1();
+                        act1.userGreeting();
+
+                } else if (choice == 2) {
+
+                        ACT_2 act2 = new ACT_2();
+                        act2.userGreeting();
+
+                } else {
+
+                        System.out.println("Selection not Found!");
+
+                }
         }
 }

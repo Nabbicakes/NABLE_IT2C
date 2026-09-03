@@ -9,9 +9,9 @@ public class ACT_1 {
         System.out.print("Enter Birth Year: ");
         int byear = sc.nextInt();
         System.out.println("=====================================");
-        System.out.println("=          GREETINGS! "+name);
+        System.out.println("|          GREETINGS! "+name);
         System.out.println("=====================================");
-        System.out.println("=Your age is: "+(2026-byear));
+        System.out.println("| Your age is: "+(2026-byear));
         System.out.println("=====================================");
 
     }
